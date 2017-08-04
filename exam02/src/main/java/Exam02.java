@@ -17,20 +17,21 @@ public class Exam02 {
                 break;
         }
     }
+
+    public int priceOfDiffOrder(int numOfDiffOder) {
+        switch (numOfDiffOder) {
+            case 1:  return 100;
+            case 2:  return 190;
+            case 3:  return 270;
+            case 4:  return 320;
+            case 5:  return 375;
+            default: return 0;
+        }
+    }
+
     public int calculateMoney() {
-        int total=sumOrder*100;
-        if(checkDiffOrder()==2) {
-            total-=200*0.05;
-        }
-        if(checkDiffOrder()==3) {
-            total-=300*0.1;
-        }
-        if(checkDiffOrder()==4) {
-            total-=400*0.2;
-        }
-        if(checkDiffOrder()==5) {
-            total-=500*0.25;
-        }
+        int total=priceOfDiffOrder(checkDiffOrder());
+        total+=100*(sumOrder-checkDiffOrder());
         return total;
     }
 
