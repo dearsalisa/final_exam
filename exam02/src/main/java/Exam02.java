@@ -19,10 +19,18 @@ public class Exam02 {
     }
     public int calculateMoney() {
         int total=sumOrder*100;
-        if(checkDiffOrder()==2) total*=0.95;
-        if(checkDiffOrder()==3) total*=0.90;
-        if(checkDiffOrder()==4) total*=0.80;
-        if(checkDiffOrder()==5) total*=0.75;
+        if(checkDiffOrder()==2) {
+            total-=200*0.05;
+        }
+        if(checkDiffOrder()==3) {
+            total-=300*0.1;
+        }
+        if(checkDiffOrder()==4) {
+            total-=400*0.2;
+        }
+        if(checkDiffOrder()==5) {
+            total-=500*0.25;
+        }
         return total;
     }
 
