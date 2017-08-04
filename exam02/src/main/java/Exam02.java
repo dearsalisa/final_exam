@@ -20,6 +20,9 @@ public class Exam02 {
     public int calculateMoney() {
         int total=sumOrder*100;
         if(checkDiffOrder()==2) total*=0.95;
+        if(checkDiffOrder()==3) total*=0.90;
+        if(checkDiffOrder()==4) total*=0.80;
+        if(checkDiffOrder()==5) total*=0.75;
         return total;
     }
 
