@@ -1,6 +1,7 @@
 public class Exam01 {
     public long max_number(long input) {
-        if(input <= 9) return input;
+        if(input <= 9) {return input;}
+        if(input <= 99 && check((int)input)) {return input;}
         else {
             String numberStr = Long.toString(input);
             String firstTwoDigits = findMaxNumber(input);

@@ -54,9 +54,9 @@ public class Exam01Test {
     }
 
     @Test
-    public void should_say_1_when_number_is_1() {
-        long actualResult = exam01.max_number(8);
-        assertEquals(8, actualResult);
+    public void should_say_59_when_number_is_63() {
+        long actualResult = exam01.max_number(63);
+        assertEquals(59, actualResult);
     }
 
     @Test
